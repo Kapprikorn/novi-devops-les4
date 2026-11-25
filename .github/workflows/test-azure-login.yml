@@ -17,4 +17,4 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Verify Azure connection
-        run: az account show --query "{name:name, id:id}" -o tabl
+        run: az account show --query "{name:name, id:id}" -o table
